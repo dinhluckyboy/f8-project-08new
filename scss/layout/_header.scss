@@ -1,0 +1,114 @@
+/* layout header scss */
+
+@use "../abstracts";
+
+header {
+  background-color: var(--header-bg-color);
+
+  @include abstracts.breakpoint(md) {
+    background-color: var(--header-bg-mobile-color);
+  }
+}
+
+.more {
+  display: none;
+
+  @include abstracts.breakpoint(lg) {
+    display: block;
+  }
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar {
+  margin-left: 144px;
+
+  @include abstracts.breakpoint(xl) {
+    margin-left: 50px;
+  }
+
+  @include abstracts.breakpoint(lg) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    column-gap: 6px;
+
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.46em; /* 146.667% */
+  }
+}
+
+.top-act {
+  display: flex;
+  column-gap: 20px;
+  margin-left: auto;
+
+  &__group {
+    display: flex;
+    align-items: center;
+
+    min-width: 50px;
+    height: 50px;
+    background-color: var(--header-bg-btn-color);
+
+    border-radius: 8px;
+    box-shadow: 0px 20px 60px 10px var(--header-shadow-btn);
+
+    @include abstracts.breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    padding: 13px 22px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &__btn--single {
+    padding: 15px;
+  }
+
+  &__title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.46em; /* 146.667% */
+  }
+
+  .separate {
+    width: 1px;
+    height: 30px;
+    background-color: #ededf6;
+  }
+}
+
+.top-act__user {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 14px 2px var(--header-shadow-user);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.top-act__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
