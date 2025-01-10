@@ -1,0 +1,28 @@
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  padding-top: 44px;
+  display: none;
+
+  &__inner {
+    position: relative;
+    padding: 30px;
+    background-color: var(--dropdown-bg);
+    border-radius: 20px;
+    box-shadow: var(--dropdown-box-shadow);
+
+    &::before {
+      position: absolute;
+      top: -12px;
+      left: var(--arrow-left-pos);
+      transform: translateX(-50%);
+      content: url("../icons/dropdown-arrow.svg");
+      filter: var(--dropdown-arrow-color);
+    }
+  }
+}
+
+.navbar__item:hover .dropdown {
+  display: block;
+}
