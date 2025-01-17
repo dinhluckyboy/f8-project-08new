@@ -8,6 +8,7 @@ html.dark {
   --header-bg-btn-color: #292e39;
   --header-shadow-btn: rgba(0, 0, 0, 0.2);
   --header-shadow-user: rgba(0, 0, 0, 0.08);
+  --header-mobile-box-shadow: rgba(0, 0, 0, 0.2);
 
   --body-bg: #292e39;
 
@@ -16,4 +17,8 @@ html.dark {
   --dropdown-box-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(22%) sepia(17%)
     saturate(711%) hue-rotate(184deg) brightness(90%) contrast(97%);
+  --border-main-menu-color: #171c28;
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(18%)
+    saturate(229%) hue-rotate(178deg) brightness(111%) contrast(96%);
+  --menu-column-text-color: #b9babe;
 }

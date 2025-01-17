@@ -9,6 +9,7 @@ header {
 
   @include abstracts.breakpoint(md) {
     background-color: var(--header-bg-mobile-color);
+    box-shadow: 0px 20px 60px 10px var(--header-mobile-box-shadow);
   }
 }
 
