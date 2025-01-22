@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(9%) sepia(8%)
@@ -21,4 +23,8 @@ html {
   --menu-column-icon-color: brightness(0) saturate(100%) invert(9%) sepia(17%)
     saturate(2053%) hue-rotate(210deg) brightness(89%) contrast(96%);
   --menu-column-text-color: #1a162e;
+
+  @include abstracts.breakpoint(lg) {
+    --header-nav-bg-color: #fff;
+  }
 }

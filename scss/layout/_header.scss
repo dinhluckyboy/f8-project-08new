@@ -35,12 +35,53 @@ header {
   }
 
   @include abstracts.breakpoint(lg) {
+    position: fixed;
+    z-index: 9;
+    inset: 0 50% 0 0;
+    background-color: var(--header-nav-bg-color);
+    margin-left: 0;
+    padding: 40px;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    &.show ~ .navbar__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__close-btn {
     display: none;
+
+    @include abstracts.breakpoint(lg) {
+      display: block;
+    }
+  }
+
+  &__overlay {
+    visibility: hidden;
+    opacity: 0;
+
+    @include abstracts.breakpoint(lg) {
+      position: fixed;
+      z-index: 8;
+      inset: 0 0 0 0;
+      background-color: rgba($color: #000000, $alpha: 0.4);
+    }
   }
 
   &__list {
     display: flex;
     column-gap: 30px;
+
+    @include abstracts.breakpoint(lg) {
+      flex-direction: column;
+    }
   }
 
   &__link {
@@ -53,6 +94,13 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.46em; /* 146.667% */
+
+    @include abstracts.breakpoint(lg) {
+      justify-content: space-between;
+
+      font-size: 1.6rem;
+      line-height: 1.5em; /* 150% */
+    }
   }
 }
 

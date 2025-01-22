@@ -1418,6 +1418,7 @@ a {
   }
 }
 /* themes */
+/* abstracts */
 html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(9%) sepia(8%)
@@ -1437,6 +1438,11 @@ html {
   --menu-column-icon-color: brightness(0) saturate(100%) invert(9%) sepia(17%)
     saturate(2053%) hue-rotate(210deg) brightness(89%) contrast(96%);
   --menu-column-text-color: #1a162e;
+}
+@media screen and (max-width: 991.98px) {
+  html {
+    --header-nav-bg-color: #fff;
+  }
 }
 
 html.dark {
@@ -1459,9 +1465,13 @@ html.dark {
     saturate(229%) hue-rotate(178deg) brightness(111%) contrast(96%);
   --menu-column-text-color: #b9babe;
 }
+@media screen and (max-width: 991.98px) {
+  html.dark {
+    --header-nav-bg-color: #292e39;
+  }
+}
 
 /* layout header scss */
-/* abstracts */
 header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1499,12 +1509,51 @@ header {
 }
 @media screen and (max-width: 991.98px) {
   .navbar {
-    display: none;
+    position: fixed;
+    z-index: 9;
+    inset: 0 50% 0 0;
+    background-color: var(--header-nav-bg-color);
+    margin-left: 0;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  .navbar.show {
+    transform: translateX(0);
+  }
+  .navbar.show ~ .navbar__overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.navbar__close-btn {
+  display: none;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__close-btn {
+    display: block;
+  }
+}
+.navbar__overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__overlay {
+    position: fixed;
+    z-index: 8;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 .navbar__list {
   display: flex;
   column-gap: 30px;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__list {
+    flex-direction: column;
+  }
 }
 .navbar__link {
   display: flex;
@@ -1515,6 +1564,13 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.46em; /* 146.667% */
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__link {
+    justify-content: space-between;
+    font-size: 1.6rem;
+    line-height: 1.5em; /* 150% */
+  }
 }
 
 .top-act {
@@ -1628,6 +1684,11 @@ header {
 
 .navbar__item:hover .dropdown {
   display: block;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar__item:hover .dropdown {
+    display: none;
+  }
 }
 
 .top-menu {
