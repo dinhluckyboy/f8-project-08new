@@ -77,6 +77,8 @@ header {
 
     @include abstracts.breakpoint(lg) {
       flex-direction: column;
+      height: calc(100% - 10px);
+      overflow-y: auto;
     }
   }
 
