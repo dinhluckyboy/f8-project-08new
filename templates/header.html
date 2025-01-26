@@ -15,10 +15,23 @@
     </a>
 
     <!-- navbar -->
-    <div id="navbar" class="navbar show">
+    <div id="navbar" class="navbar hide">
       <div class="navbar__close-btn js-toggle" toggle-target="#navbar">
         <img src="./assets/icons/arrow-left.svg" alt="close" class="icon" />
       </div>
+
+      <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icons/shop.svg" alt="" class="nav-btn__icon icon" />
+        <p class="nav-btn__title">Card</p>
+        <p class="nav-btn__number">3</p>
+      </a>
+
+      <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icons/heart.svg" alt="" class="nav-btn__icon icon" />
+        <p class="nav-btn__title">Favorite</p>
+        <p class="nav-btn__number">3</p>
+      </a>
+
       <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
           <a href="#!" class="navbar__link"
@@ -30,7 +43,7 @@
             />
           </a>
           <!-- dropdown  -->
-          <div class="dropdown">
+          <div class="dropdown js-dropdown">
             <div class="dropdown__inner">
               <div class="top-menu">
                 <div class="main-menu">
