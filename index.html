@@ -91,14 +91,39 @@
       load("#header", "./templates/header.html");
     </script>
 
-    <!-- main  -->
+    <div class="container">
+      <!-- slideshow  -->
+      <div class="slideshow">
+        <div class="slideshow__inner">
+          <!-- item 1  -->
+          <div class="slideshow__item">
+            <a href="#!" class="slideshow__link">
+              <picture>
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="./assets/img/slideshow/slideshow-mobile.png"
+                />
+                <img
+                  src="./assets/img/slideshow/slideshow.png"
+                  alt=""
+                  class="slideshow__img"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="slideshow__page">
+          <span class="slideshow__num">1</span>
+          <span class="slideshow__line"></span>
+          <span class="slideshow__num">5</span>
+        </div>
+      </div>
 
-    <h1>Home page</h1>
-
-    <!-- footer  -->
-    <footer id="footer"></footer>
-    <script>
-      load("#footer", "./templates/footer.html");
-    </script>
+      <!-- footer  -->
+      <footer id="footer"></footer>
+      <script>
+        load("#footer", "./templates/footer.html");
+      </script>
+    </div>
   </body>
 </html>

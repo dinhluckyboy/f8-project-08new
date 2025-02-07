@@ -24,7 +24,7 @@ html.dark {
     saturate(229%) hue-rotate(178deg) brightness(111%) contrast(96%);
   --menu-column-text-color: #b9babe;
 
-  @include abstracts.breakpoint(lg) {
+  @include abstracts.screen(lg) {
     --header-nav-bg-color: #292e39;
   }
 }
