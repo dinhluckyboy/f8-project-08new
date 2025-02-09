@@ -27,4 +27,15 @@ html {
   @include abstracts.screen(lg) {
     --header-nav-bg-color: #fff;
   }
+
+  // categories item
+
+  --cate-item-bg: #eee;
+  --cate-item-thumb-bg: #fff;
+  --cate-item-price-color: #000;
+  --cate-item-desc-color: #1a162e;
+
+  @include abstracts.screen(md) {
+    --cate-item-bg: #fff;
+  }
 }

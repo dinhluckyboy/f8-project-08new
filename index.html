@@ -91,33 +91,82 @@
       load("#header", "./templates/header.html");
     </script>
 
-    <div class="container">
-      <!-- slideshow  -->
-      <div class="slideshow">
-        <div class="slideshow__inner">
-          <!-- item 1  -->
-          <div class="slideshow__item">
-            <a href="#!" class="slideshow__link">
-              <picture>
-                <source
-                  media="(max-width: 767.98px)"
-                  srcset="./assets/img/slideshow/slideshow-mobile.png"
-                />
-                <img
-                  src="./assets/img/slideshow/slideshow.png"
-                  alt=""
-                  class="slideshow__img"
-                />
-              </picture>
-            </a>
+    <div class="container home">
+      <section class="home__container">
+        <!-- slideshow  -->
+        <div class="slideshow">
+          <div class="slideshow__inner">
+            <!-- item 1  -->
+            <div class="slideshow__item">
+              <a href="#!" class="slideshow__link">
+                <picture>
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="./assets/img/slideshow/slideshow-mobile.png"
+                  />
+                  <img
+                    src="./assets/img/slideshow/slideshow.png"
+                    alt=""
+                    class="slideshow__img"
+                  />
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="slideshow__page">
+            <span class="slideshow__num">1</span>
+            <span class="slideshow__line"></span>
+            <span class="slideshow__num">5</span>
           </div>
         </div>
-        <div class="slideshow__page">
-          <span class="slideshow__num">1</span>
-          <span class="slideshow__line"></span>
-          <span class="slideshow__num">5</span>
+      </section>
+
+      <!-- browse categories  -->
+      <section class="home__container">
+        <h2 class="home__heading">Browse Categories</h2>
+        <div class="home__gutter row row-cols-3 row-cols-md-1">
+          <!-- col 1 -->
+          <div class="col">
+            <div class="cate-item">
+              <div class="cate-item__thumb">
+                <img src="./assets/img/cate-item/cate-item-1.png" alt="" />
+              </div>
+              <div class="cate-item__content">
+                <p class="cate-item__price">$24 - $150</p>
+                <p class="cate-item__desc">New sumatra mandeling coffe blend</p>
+              </div>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col">
+            <div class="cate-item">
+              <div class="cate-item__thumb">
+                <img src="./assets/img/cate-item/cate-item-2.png" alt="" />
+              </div>
+              <div class="cate-item__content">
+                <p class="cate-item__price">$37 - $160</p>
+                <p class="cate-item__desc">
+                  Espresso arabica and robusta beans
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div class="col">
+            <div class="cate-item">
+              <div class="cate-item__thumb">
+                <img src="./assets/img/cate-item/cate-item-3.png" alt="" />
+              </div>
+              <div class="cate-item__content">
+                <p class="cate-item__price">$32 - $160</p>
+                <p class="cate-item__desc">
+                  Lavazza top class whole bean coffee blend
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer  -->
       <footer id="footer"></footer>
