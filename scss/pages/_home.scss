@@ -12,7 +12,6 @@
   }
 
   &__heading {
-    margin-bottom: 20px;
     color: var(--text-color);
     font-size: 2.4rem;
     font-weight: 700;
@@ -24,7 +23,14 @@
   }
 
   &__gutter {
+    margin-top: 0px;
     --grid-gutter-x: 51px;
     --grid-gutter-y: 20px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
 }
