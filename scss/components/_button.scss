@@ -26,4 +26,16 @@
   border-radius: 50%;
   flex-shrink: 0;
   box-shadow: 0px 20px 60px var(--like-btn-shadow);
+
+  &:not(&--liked) &__img-red {
+    display: none;
+  }
+
+  &--liked &__img {
+    display: none;
+  }
+
+  &__img-red {
+    margin-top: 6px;
+  }
 }

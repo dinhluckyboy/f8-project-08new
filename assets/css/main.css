@@ -2168,6 +2168,15 @@ header {
   flex-shrink: 0;
   box-shadow: 0px 20px 60px var(--like-btn-shadow);
 }
+.like-btn:not(.like-btn--liked) .like-btn__img-red {
+  display: none;
+}
+.like-btn--liked .like-btn__img {
+  display: none;
+}
+.like-btn__img-red {
+  margin-top: 6px;
+}
 
 /* product card scss */
 .product-card {
