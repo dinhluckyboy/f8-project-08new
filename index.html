@@ -172,14 +172,148 @@
       <section class="home__container">
         <div class="home__row">
           <h2 class="home__heading">Total LavAzza 1320</h2>
-          <button class="filter-btn">
-            Filter
-            <img
-              src="./assets/icons/filter.svg"
-              alt=""
-              class="icon filter-btn__img"
-            />
-          </button>
+          <div class="filter-wrap">
+            <button class="filter-btn">
+              Filter
+              <img
+                src="./assets/icons/filter.svg"
+                alt=""
+                class="icon filter-btn__img"
+              />
+            </button>
+            <form action="#" class="filter-form">
+              <h3 class="filter-form__heading filter-form__text">Filter</h3>
+              <div class="filter-form__row">
+                <!-- col 1 -->
+                <div class="filter-form__col">
+                  <label for="" class="filter-form__label filter-form__text"
+                    >Price
+                  </label>
+                  <div class="filter-form__group">
+                    <div
+                      class="filter-form__slider"
+                      style="--min-value: 10%; --max-value: 70%"
+                    ></div>
+                  </div>
+                  <div class="filter-form__group filter-form__group--row">
+                    <div>
+                      <label
+                        for=""
+                        class="filter-form__label--small filter-form__text"
+                        >Minimum</label
+                      >
+                      <input
+                        type="text"
+                        class="filter-form__input"
+                        value="$30.00"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for=""
+                        class="filter-form__label--small filter-form__text"
+                        >Maximum</label
+                      >
+                      <input
+                        type="text"
+                        class="filter-form__input"
+                        value="$100.00"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- col 2 -->
+                <div class="filter-form__col">
+                  <label for="" class="filter-form__label filter-form__text"
+                    >Size/Weight
+                  </label>
+                  <div class="filter-form__group">
+                    <div class="filter-form__select-wrap">
+                      <div
+                        class="filter-form__select filter-form__select--large filter-form__text"
+                      >
+                        500g
+                        <img
+                          src="./assets/icons/filter-form-arrow.svg"
+                          alt=""
+                          class="filter-form__select-img icon"
+                        />
+                      </div>
+                      <div class="filter-form__select filter-form__text">
+                        Gram
+                        <img
+                          src="./assets/icons/filter-form-arrow.svg"
+                          alt=""
+                          class="filter-form__select-img icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-form__group">
+                    <div class="filter-form__tags">
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Small
+                        </div>
+                      </a>
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Medium
+                        </div>
+                      </a>
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Large
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- col 3 -->
+                <div class="filter-form__col">
+                  <label for="" class="filter-form__label filter-form__text">
+                    Brand
+                  </label>
+                  <div class="filter-form__group">
+                    <div class="filter-form__input-search-wrap">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="filter-form__input filter-form__input--large"
+                        placeholder="Search brand name"
+                      />
+
+                      <img
+                        src="./assets/icons/search.svg"
+                        alt=""
+                        class="filter-form__input-search-img icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="filter-form__group">
+                    <div class="filter-form__tags">
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Lavazza
+                        </div>
+                      </a>
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Nescafe
+                        </div>
+                      </a>
+                      <a href="#!">
+                        <div class="filter-form__tag filter-form__text">
+                          Starbucks
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
           <!-- item 1  -->

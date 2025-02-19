@@ -16,12 +16,16 @@ body {
   background-color: var(--body-bg);
 }
 
+a,
+img,
 button,
 input,
 textarea,
 select {
   font-family: inherit;
   color: inherit;
+  outline: none;
+  border: none;
 }
 
 button {
