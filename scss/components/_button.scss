@@ -39,3 +39,40 @@
     margin-top: 6px;
   }
 }
+
+// btn
+
+.btn {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.44em; /* 144.444% */
+
+  &-text {
+    background-color: transparent;
+    color: #9e9da8;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &-primary {
+    color: #1a162e;
+    background-color: #ffb700;
+  }
+
+  &-outline {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--btn-outline-border-color);
+    color: var(--btn-outline-color);
+  }
+
+  &-round {
+    background-color: #ffb700;
+    border-radius: 50px;
+  }
+}

@@ -54,4 +54,10 @@ html.dark {
   --filter-form-bg: #292e39;
   --filter-form-shadow: rgba(0, 0, 0, 0.4);
   --filter-form-tag-bg: #171c28;
+  --filter-form-arrow-up-bg: brightness(0) saturate(100%) invert(17%) sepia(35%)
+    saturate(297%) hue-rotate(182deg) brightness(88%) contrast(95%);
+
+  // btn
+  --btn-outline-border-color: #b9babe;
+  --btn-outline-color: #b9babe;
 }
