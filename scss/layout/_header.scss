@@ -3,6 +3,11 @@
 @use "../abstracts";
 
 header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--header-bg-color);
@@ -212,6 +217,16 @@ header {
     width: 1px;
     height: 30px;
     background-color: #ededf6;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+  }
+
+  &__login-btn.btn {
+    font-size: 1.6rem;
+    padding: 10px 20px;
   }
 }
 
