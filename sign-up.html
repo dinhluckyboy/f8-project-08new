@@ -85,8 +85,123 @@
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
-    <main>
-      <h1>Sign up</h1>
+    <main class="login">
+      <div class="login__inner">
+        <div class="login__intro">
+          <img src="./assets/img/login-intro.svg" alt="" class="login__img" />
+          <p class="login__intro-text">
+            The best of luxury brand values, high quality products, and
+            innovative services
+          </p>
+        </div>
+        <div class="login__info">
+          <div class="login__content">
+            <!-- logo  -->
+            <a href="./" class="logo login__logo">
+              <img
+                src="./assets/icons/logo.svg"
+                alt="grocerymart"
+                class="logo__img"
+              />
+              <h2 class="logo__title">grocerymart</h2>
+            </a>
+
+            <h1 class="login__heading">Sign Up</h1>
+            <p class="login__desc login__text">
+              Let’s create your account and Shop like a pro and save money.
+            </p>
+
+            <!-- form  -->
+            <form action="#" class="login-form">
+              <!-- input 1  -->
+              <div class="login-form__group">
+                <div class="login-form__wrap">
+                  <input
+                    type="text"
+                    name="mail"
+                    id="mail"
+                    class="login-form__input"
+                    placeholder="Email"
+                  />
+                  <img
+                    src="./assets/icons/mail.svg"
+                    alt=""
+                    class="login-form__icon"
+                  />
+                </div>
+              </div>
+              <!-- input 2  -->
+              <div class="login-form__group">
+                <div class="login-form__wrap">
+                  <input
+                    type="text"
+                    name="pass"
+                    id="pass"
+                    class="login-form__input"
+                    placeholder="Password"
+                  />
+                  <img
+                    src="./assets/icons/pass.svg"
+                    alt=""
+                    class="login-form__icon"
+                  />
+                </div>
+              </div>
+              <!-- input 3  -->
+              <div class="login-form__group">
+                <div class="login-form__wrap">
+                  <input
+                    type="text"
+                    name="confirm-pass"
+                    id="confirm-pass"
+                    class="login-form__input"
+                    placeholder="Confirm Password"
+                  />
+                  <img
+                    src="./assets/icons/pass.svg"
+                    alt=""
+                    class="login-form__icon"
+                  />
+                </div>
+              </div>
+
+              <div class="login-form__group--small">
+                <div class="login-form__row login-form__confirm">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    class="checkbox"
+                    hidden
+                  />
+                  <label for="checkbox" class="login-form__checkbox">
+                    Set as default card
+                  </label>
+
+                  <p class="login__link">Recovery Password</p>
+                </div>
+              </div>
+            </form>
+
+            <div class="login__cta">
+              <button class="btn btn-primary login__cta-btn">Sign Up</button>
+              <button class="btn btn-outline login__cta-btn">
+                <img
+                  src="./assets/icons/google.svg"
+                  alt=""
+                  class="login__icon"
+                />
+                Sign in with Gmail
+              </button>
+            </div>
+
+            <div class="login__foot">
+              <p class="login__text">You have an account yet?</p>
+              <p class="login__link">Sign In</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
