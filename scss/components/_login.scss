@@ -1,24 +1,51 @@
 /* Login */
 
+@use "../abstracts";
+
 .login {
-  min-height: 100vh;
+  height: 100vh;
+
+  &__logo {
+    margin-left: 0;
+    column-gap: 14px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .logo__title {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
 
   &__inner {
     display: flex;
   }
 
   &__intro {
-    min-height: 100vh;
+    padding: 30px;
     display: flex;
-    flex: 1;
+    width: 50%;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--login-intro-bg);
 
+    @include abstracts.screen(md) {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+    }
+
     &-text {
       margin-top: 50px;
-      width: 412px;
+      max-width: 412px;
 
       color: var(--login-text-color);
       text-align: center;
@@ -26,19 +53,67 @@
       font-style: normal;
       font-weight: 500;
       line-height: 1.44em; /* 144.444% */
+
+      @include abstracts.screen(sm) {
+        font-size: 1.5rem;
+        line-height: 1.46em; /* 146.667% */
+      }
+    }
+
+    &-logo {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-arrow {
+      position: absolute;
+      bottom: 52px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include abstracts.screen(sm) {
+        bottom: 200px;
+      }
     }
   }
 
   &__info {
-    flex: 1;
-    padding-top: 50px;
-    padding-bottom: 52px;
+    padding: 50px 30px 0 30px;
+    width: 50%;
+    background-color: var(--login-info-bg);
+    transition: transform 0.3s;
+
+    @include abstracts.screen(md) {
+      position: fixed;
+      width: 100%;
+      inset: 0 0 0 0;
+      overflow-y: auto;
+
+      &.hide {
+        transform: translateX(100%);
+      }
+      &.show {
+        transform: translateX(0);
+      }
+    }
   }
 
   &__content {
-    width: 460px;
+    padding-bottom: 52px;
+    max-width: 460px;
     margin: 0 auto;
     text-align: center;
+
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    @include abstracts.screen(sm) {
+      height: calc(100% - 150px);
+      // background-color: red;
+    }
   }
 
   &__logo {
@@ -52,6 +127,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.46em; /* 146.667% */
+
+    @include abstracts.screen(sm) {
+      font-size: 2.2rem;
+      line-height: 1.45em;
+    }
   }
 
   &__text {
@@ -68,6 +148,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.44em; /* 144.444% */
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+      line-height: 1.5em;
+    }
   }
 
   &__desc {
@@ -76,6 +161,11 @@
     margin-right: auto;
     margin-top: 10px;
     font-weight: 500;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+      line-height: 1.42em;
+    }
   }
 
   &__cta {
@@ -102,9 +192,18 @@
     justify-content: center;
     gap: 10px;
 
+    @include abstracts.screen(sm) {
+      margin-top: 56px;
+    }
+
     .login__text {
       font-size: 1.8rem;
       line-height: 1.44em;
+
+      @include abstracts.screen(sm) {
+        font-size: 1.6rem;
+        line-height: 1.5em;
+      }
     }
   }
 }
