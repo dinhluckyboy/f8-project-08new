@@ -68,9 +68,14 @@ html.dark {
   // login
 
   --login-intro-bg: #171c28;
+  @include abstracts.screen(md) {
+    --login-intro-bg: #171c28;
+  }
   --login-info-bg: #292e39;
   --login-text-color: #b9babe;
   --login-desc-color: #b9babe;
+  --login-icon-color: brightness(0) saturate(100%) invert(90%) sepia(8%)
+    saturate(98%) hue-rotate(190deg) brightness(83%) contrast(89%);
 
   // login form
   --login-form-input-border-color: #b9babe;

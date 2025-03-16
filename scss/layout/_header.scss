@@ -227,6 +227,10 @@ header {
   &__login-btn.btn {
     font-size: 1.6rem;
     padding: 10px 20px;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+    }
   }
 }
 

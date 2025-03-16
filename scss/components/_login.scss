@@ -3,7 +3,8 @@
 @use "../abstracts";
 
 .login {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 
   &__logo {
     margin-left: 0;
@@ -74,7 +75,7 @@
       transform: translateX(-50%);
 
       @include abstracts.screen(sm) {
-        bottom: 200px;
+        bottom: 150px;
       }
     }
   }
@@ -105,15 +106,6 @@
     max-width: 460px;
     margin: 0 auto;
     text-align: center;
-
-    height: calc(100% - 120px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-
-    @include abstracts.screen(sm) {
-      height: calc(100% - 150px);
-      // background-color: red;
-    }
   }
 
   &__logo {
@@ -180,9 +172,11 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-
-      color: var(--login-text-color);
       height: 50px;
+    }
+
+    &.btn-outline {
+      color: var(--login-text-color);
     }
   }
 
@@ -205,5 +199,9 @@
         line-height: 1.5em;
       }
     }
+  }
+
+  &__icon {
+    filter: var(--login-icon-color);
   }
 }

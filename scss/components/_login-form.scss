@@ -5,6 +5,11 @@
 .login-form {
   margin-top: 60px;
 
+  &:has(:invalid) .login__cta-btn.btn-primary {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   @include abstracts.screen(sm) {
     margin-top: 30px;
   }
@@ -19,6 +24,29 @@
     &--small {
       margin-top: 20px;
     }
+  }
+
+  &__group:has(:invalid):has(&__input:not(:placeholder-shown)) &__wrap {
+    background-color: rgba($color: #ff0000, $alpha: 0.1);
+    border-color: rgba($color: #ff0000, $alpha: 0.2);
+  }
+
+  &__group:has(:invalid):has(&__input:not(:placeholder-shown)) &__error,
+  &__group:has(:invalid):has(&__input:not(:placeholder-shown)) &__icon-error {
+    display: block;
+  }
+
+  &__group:has(:invalid):has(&__input:not(:placeholder-shown)) &__icon {
+    display: none;
+  }
+
+  &__error {
+    display: none;
+    font-size: 1.4rem;
+    line-height: 1.42em;
+    text-align: left;
+    margin-top: 8px;
+    color: red;
   }
 
   &__wrap {
@@ -50,6 +78,12 @@
       font-size: 1.6rem;
       line-height: 1.5em;
     }
+  }
+
+  &__icon-error {
+    display: none;
+    width: 24px;
+    height: 24px;
   }
 
   &__row {

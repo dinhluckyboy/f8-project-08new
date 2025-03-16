@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="darrk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -132,57 +132,83 @@
             </p>
 
             <!-- form  -->
-            <form action="#" class="login-form">
+            <form action="./index-login.html" class="login-form">
               <!-- input 1  -->
               <div class="login-form__group">
                 <div class="login-form__wrap">
                   <input
-                    type="text"
+                    type="email"
                     name="mail"
                     id="mail"
                     class="login-form__input"
                     placeholder="Email"
+                    required
+                    value="admin@grocery.com"
                   />
                   <img
                     src="./assets/icons/mail.svg"
                     alt=""
                     class="login-form__icon"
                   />
+                  <img
+                    src="./assets/icons/triangle-warning.svg"
+                    alt=""
+                    class="login-form__icon-error"
+                  />
                 </div>
+                <p class="login-form__error">Email chua dung dinh dang</p>
               </div>
               <!-- input 2  -->
               <div class="login-form__group">
                 <div class="login-form__wrap">
                   <input
-                    type="text"
+                    type="password"
                     name="pass"
                     id="pass"
                     class="login-form__input"
                     placeholder="Password"
+                    minlength="6"
+                    required
+                    value="123456"
                   />
                   <img
                     src="./assets/icons/pass.svg"
                     alt=""
                     class="login-form__icon"
                   />
+                  <img
+                    src="./assets/icons/triangle-warning.svg"
+                    alt=""
+                    class="login-form__icon-error"
+                  />
                 </div>
+                <p class="login-form__error">Mat khau co it nhat 6 ki tu</p>
               </div>
               <!-- input 3  -->
               <div class="login-form__group">
                 <div class="login-form__wrap">
                   <input
-                    type="text"
+                    type="password"
                     name="confirm-pass"
                     id="confirm-pass"
                     class="login-form__input"
                     placeholder="Confirm Password"
+                    minlength="6"
+                    required
+                    value="123456"
                   />
                   <img
                     src="./assets/icons/pass.svg"
                     alt=""
                     class="login-form__icon"
                   />
+                  <img
+                    src="./assets/icons/triangle-warning.svg"
+                    alt=""
+                    class="login-form__icon-error"
+                  />
                 </div>
+                <p class="login-form__error">Mat khau co it nhat 6 ki tu</p>
               </div>
 
               <div class="login-form__group--small">
@@ -201,23 +227,24 @@
                   <p class="login__link">Recovery Password</p>
                 </div>
               </div>
+
+              <div class="login__cta">
+                <button type="submit" class="btn btn-primary login__cta-btn">
+                  Sign Up
+                </button>
+                <button class="btn btn-outline login__cta-btn">
+                  <img
+                    src="./assets/icons/google.svg"
+                    alt=""
+                    class="login__icon"
+                  />
+                  Sign in with Gmail
+                </button>
+              </div>
             </form>
-
-            <div class="login__cta">
-              <button class="btn btn-primary login__cta-btn">Sign Up</button>
-              <button class="btn btn-outline login__cta-btn">
-                <img
-                  src="./assets/icons/google.svg"
-                  alt=""
-                  class="login__icon"
-                />
-                Sign in with Gmail
-              </button>
-            </div>
-
             <div class="login__foot">
               <p class="login__text">You have an account yet?</p>
-              <p class="login__link">Sign In</p>
+              <a href="./sign-in.html" class="login__link">Sign In</a>
             </div>
           </div>
         </div>

@@ -70,9 +70,14 @@ html {
   // login
 
   --login-intro-bg: #fafafd;
+  @include abstracts.screen(md) {
+    --login-intro-bg: #fff;
+  }
   --login-info-bg: #fff;
   --login-text-color: #1a162e;
   --login-desc-color: #9e9da8;
+  --login-icon-color: brightness(0) saturate(100%) invert(7%) sepia(55%)
+    saturate(1161%) hue-rotate(219deg) brightness(96%) contrast(95%);
 
   // login form
   --login-form-input-border-color: #d2d1d6;
