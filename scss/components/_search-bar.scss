@@ -1,0 +1,28 @@
+/* search bar */
+
+.search-bar {
+  background-color: var(--search-bar-bg);
+
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+  padding: 0 15px;
+}
+
+.search-bar__input {
+  width: 100%;
+  height: 100%;
+
+  color: var(--search-bar-input-text-color);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42em; /* 142.857% */
+}
+
+.search-bar__icon {
+  padding-left: 12px;
+}

@@ -1,0 +1,81 @@
+/* form scss */
+
+@use "../abstracts";
+
+.form {
+  &__text {
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.45em; /* 145.455% */
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    color: var(--text-color);
+
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.45em; /* 145.455% */
+  }
+
+  &__group {
+    margin-top: 20px;
+
+    &--row {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__select-wrap {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #d2d1d6;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    min-width: 108px;
+    height: calc(100% - 10px);
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+  }
+
+  &__select--large {
+    min-width: 149px;
+
+    @include abstracts.screen(sm) {
+      width: 127px;
+    }
+  }
+
+  &__select + &__select {
+    border-left: 1px solid #d2d1d6;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @include abstracts.screen(sm) {
+      gap: 9px;
+    }
+  }
+
+  &__tag {
+    background-color: var(--form-tag-bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+
+    color: #9e9da8;
+    font-size: 1.5rem;
+  }
+}

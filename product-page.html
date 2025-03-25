@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Mart</title>
+    <!-- favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fonts  -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- java scripts  -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header id="header"></header>
+    <script>
+      load("#header", "./templates/header-login.html");
+    </script>
+
+    <main class="product-page">
+      <div class="container">
+        <!-- search  -->
+        <div class="product-container d-none d-md-block">
+          <div class="search-bar">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="search-bar__input"
+              placeholder="Search for item"
+            />
+            <button>
+              <img
+                src="./assets/icons/search.svg"
+                alt=""
+                class="search-bar__icon icon"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- breadcrumbs  -->
+        <div class="product-container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#!" class="breadcrumbs__link">
+                  Departments
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                    class="breadcrumbs__icon"
+                  />
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#!" class="breadcrumbs__link">
+                  Coffee
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                    class="breadcrumbs__icon"
+                  />
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#!" class="breadcrumbs__link"
+                  >Coffee Beans
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                    class="breadcrumbs__icon"
+                /></a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#!" class="breadcrumbs__link">LavAzza </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product info  -->
+        <div class="product-container">
+          <div class="product-info">
+            <div class="row">
+              <div class="col-5 col-lg-12">
+                <div class="product-media">
+                  <img
+                    src="./assets/img/product-card/product-card-1.png"
+                    alt=""
+                    class="product-media__img"
+                  />
+                </div>
+              </div>
+              <div class="col-7 col-lg-12">
+                <div class="product-content">
+                  <h1 class="product-heading">
+                    Coffee Beans - Espresso Arabica and Robusta Beans
+                  </h1>
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <div class="product-attribute">
+                        <div class="product-attribute__head">
+                          <img
+                            src="./assets/icons/start.svg"
+                            alt=""
+                            class="product-attribute__icon"
+                          />
+                          <p class="product-attribute__title">
+                            (3.5) 1100 reviews
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-select-size form">
+                        <label for="" class="form__heading">Size/Weight </label>
+                        <div class="form__group">
+                          <div class="form__select-wrap">
+                            <div
+                              class="product-page__select product-page__select--large form__select form__select--large form__text"
+                            >
+                              500g
+                              <img
+                                src="./assets/icons/filter-form-arrow.svg"
+                                alt=""
+                                class="form__select-img icon"
+                              />
+                            </div>
+                            <div
+                              class="product-page__select form__select form__text"
+                            >
+                              Gram
+                              <img
+                                src="./assets/icons/filter-form-arrow.svg"
+                                alt=""
+                                class="form__select-img icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__group">
+                          <div class="form__tags">
+                            <a href="#!">
+                              <div class="form__tag form__text">Small</div>
+                            </a>
+                            <a href="#!">
+                              <div class="form__tag form__text">Medium</div>
+                            </a>
+                            <a href="#!">
+                              <div class="form__tag form__text">Large</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <div class="product-attribute">
+                        <div class="product-attribute__head">
+                          <img
+                            src="./assets/icons/list.svg"
+                            alt=""
+                            class="product-attribute__icon icon"
+                          />
+                          <p class="product-attribute__title">Compare</p>
+                        </div>
+                      </div>
+                      <div class="product-attribute">
+                        <div class="product-attribute__head">
+                          <img
+                            src="./assets/icons/shop.svg"
+                            alt=""
+                            class="product-attribute__icon icon"
+                          />
+                          <p class="product-attribute__title">Delivery</p>
+                        </div>
+                        <p class="product-attribute__desc">
+                          From $6 for 1-3 days
+                        </p>
+                      </div>
+                      <div class="product-attribute">
+                        <div class="product-attribute__head">
+                          <img
+                            src="./assets/icons/bag.svg"
+                            alt=""
+                            class="product-attribute__icon icon"
+                          />
+                          <p class="product-attribute__title">Pickup</p>
+                        </div>
+                        <p class="product-attribute__desc">
+                          Out of 2 store, today
+                        </p>
+                      </div>
+                      <div class="product-add-to-card">
+                        <div class="product-add-to-card__row">
+                          <span class="product-add-to-card__price"
+                            >$500.00</span
+                          >
+                          <span class="product-add-to-card__discount">10%</span>
+                        </div>
+                        <div class="product-add-to-card__final-price">
+                          $540.00
+                        </div>
+                        <div class="product-add-to-card__cta">
+                          <button
+                            class="product-add-to-card__btn btn btn-primary"
+                          >
+                            Add to card
+                          </button>
+                          <img
+                            src="./assets/icons/heart.svg"
+                            alt=""
+                            class="product-add-to-card__icon icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+  </body>
+</html>

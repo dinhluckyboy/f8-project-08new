@@ -83,4 +83,30 @@ html {
   --login-form-input-border-color: #d2d1d6;
   --login-form-input-placeholder-color: #d2d1d6;
   --login-form-checkbox-border-color: #9e9da8;
+
+  // form
+  --form-tag-bg: #ededf6;
+
+  // product page
+  --product-page-bg: #fff;
+  @include abstracts.screen(md) {
+    --product-page-bg: #fafafd;
+  }
+
+  --product-page-breadcrumbs-bg: #f6f6f6;
+  @include abstracts.screen(md) {
+    --product-page-breadcrumbs-bg: #fff;
+  }
+  --product-page-breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+
+  --product-page-content-bg: #f6f6f6;
+  @include abstracts.screen(md) {
+    --product-page-content-bg: #fff;
+  }
+  --product-page-info-shadow: rgba(237, 237, 246, 0.2);
+  --product-page-info-bg: #fff;
+
+  // search bar
+  --search-bar-bg: #fff;
+  --search-bar-input-text-color: #9e9da8;
 }
