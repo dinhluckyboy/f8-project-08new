@@ -7,11 +7,16 @@ body {
 
 .product-container {
   margin-top: 30px;
+
+  @include abstracts.screen(md) {
+    margin-top: 20px;
+  }
 }
 
 .product-page {
   margin-top: 110px;
   padding-top: 1px;
+  padding-bottom: 30px;
   background-color: var(--product-page-bg);
 
   & &__select {
@@ -233,5 +238,134 @@ body {
 .form-select-size {
   @include abstracts.screen(md) {
     margin-bottom: 40px;
+  }
+}
+
+.product-tab {
+  &__list {
+    display: flex;
+    gap: 60px;
+
+    @include abstracts.screen(md) {
+      gap: 20px;
+    }
+  }
+
+  &__link {
+    color: #9e9da8;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.45em; /* 145.455% */
+
+    &--active {
+      color: var(--text-color);
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 1.4rem;
+      line-height: 1.42em;
+    }
+  }
+
+  &__contents {
+    margin-top: 30px;
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__review {
+    margin-top: 30px;
+    // margin-bottom: 30px;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41em; /* 141.667% */
+
+    @include abstracts.screen(md) {
+      font-size: 1.8rem;
+      line-height: 1.44em;
+      font-weight: 500;
+    }
+  }
+
+  &__customer {
+    border-radius: 16px;
+    background-color: var(--product-page-tab-customer-bg);
+    padding: 30px;
+
+    &-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-row + &-row {
+      margin-top: 20px;
+    }
+
+    &-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      flex-shrink: 0;
+
+      @include abstracts.screen(md) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &-name {
+      margin-bottom: 10px;
+      color: var(--text-color);
+      font-size: 2.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.45em; /* 145.455% */
+
+      @include abstracts.screen(md) {
+        font-size: 1.8rem;
+        line-height: 1.44em;
+      }
+    }
+
+    &-feedback {
+      color: var(--text-color);
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5em; /* 150% */
+    }
+
+    &-icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    &-point {
+      color: var(--text-color);
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.44em; /* 144.444% */
+    }
   }
 }

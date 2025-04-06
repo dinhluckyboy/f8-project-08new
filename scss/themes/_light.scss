@@ -105,6 +105,10 @@ html {
   }
   --product-page-info-shadow: rgba(237, 237, 246, 0.2);
   --product-page-info-bg: #fff;
+  --product-page-tab-customer-bg: #fafafd;
+  @include abstracts.screen(md) {
+    --product-page-tab-customer-bg: #fff;
+  }
 
   // search bar
   --search-bar-bg: #fff;
