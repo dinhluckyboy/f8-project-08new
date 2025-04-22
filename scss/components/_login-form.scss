@@ -14,6 +14,14 @@
     margin-top: 30px;
   }
 
+  &__label {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.44em; /* 144.444% */
+  }
+
   &__group {
     margin-top: 30px;
 

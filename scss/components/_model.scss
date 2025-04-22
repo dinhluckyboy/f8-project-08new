@@ -1,0 +1,71 @@
+/* dialog scss */
+
+@use "../abstracts";
+
+.model {
+  transition: opacity, visibility;
+  transition-duration: 0.2s;
+
+  &__heading {
+    color: var(--checkout-text-color);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41em; /* 141.667% */
+  }
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__content {
+    width: min(750px, (100% - 40px));
+    position: relative;
+    z-index: 1;
+
+    padding: 30px;
+    background-color: var(--dialog-content-bg);
+    border-radius: 20px;
+    box-shadow: 0px 20px 60px 10px var(--dialog-content-shadow);
+
+    &--small {
+      width: min(450px, (100% - 40px));
+    }
+  }
+
+  &__text {
+    color: var(--checkout-text-color);
+    font-size: 1.8rem;
+    line-height: 1.44em;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    padding: 10px 30px;
+  }
+}

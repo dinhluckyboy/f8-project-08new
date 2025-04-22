@@ -14,6 +14,12 @@ html {
 
   --body-bg: #f6f6f6;
 
+  // header
+  --header-cart-dropdown-bg: #fff;
+  --header-cart-dropdown-shadow: rgba(200, 200, 200, 0.4);
+  --header-cart-dropdown-color: #1a162e;
+  --header-cart-dropdown-border-color: #d2d1d6;
+
   // dropdown
   --dropdown-bg: #fff;
   --dropdown-box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
@@ -113,4 +119,16 @@ html {
   // search bar
   --search-bar-bg: #fff;
   --search-bar-input-text-color: #9e9da8;
+
+  // add to cart page
+  --checkout-breadcrumbs-bg: #fff;
+  --checkout-breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+  --checkout-bg: #fff;
+  --checkout-shadow: rgba(237, 237, 246, 0.2);
+  --checkout-text-color: #1a162e;
+  --checkout-item-border-color: #d2d1d6;
+
+  // dialog
+  --dialog-content-bg: #fff;
+  --dialog-content-shadow: rgba(237, 237, 246, 0.2);
 }

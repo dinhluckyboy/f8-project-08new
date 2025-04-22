@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Mart</title>
+    <!-- favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fonts  -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- java scripts  -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header id="header"></header>
+    <script>
+      load("#header", "./templates/header-login.html");
+    </script>
+
+    <main class="checkout-page">
+      <div class="container">
+        <!-- search  -->
+        <div class="chekout-container d-none d-md-block">
+          <div class="search-bar">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="search-bar__input"
+              placeholder="Search for item"
+            />
+            <button>
+              <img
+                src="./assets/icons/search.svg"
+                alt=""
+                class="search-bar__icon icon"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- breadcrumbs  -->
+        <div class="checkout-container">
+          <div class="checkout-breadcrumbs">
+            <ul class="checkout-breadcrumbs__list">
+              <li class="checkout-breadcrumbs__item">
+                <a href="#!" class="checkout-breadcrumbs__link">
+                  Home
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                    class="checkout-breadcrumbs__icon"
+                  />
+                </a>
+              </li>
+              <li class="checkout-breadcrumbs__item">
+                <a href="#!" class="checkout-breadcrumbs__link">
+                  Checkout
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                    class="checkout-breadcrumbs__icon"
+                  />
+                </a>
+              </li>
+              <li class="checkout-breadcrumbs__item">
+                <a href="#!" class="checkout-breadcrumbs__link"> Shipping </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product info  -->
+        <div class="checkout-container">
+          <div class="row">
+            <div class="col-8 col-lg-12">
+              <div class="checkout__inner">
+                <h1 class="checkout__heading">
+                  1. Shipping, arrives between Mon, May 16—Tue, May 24
+                </h1>
+                <div class="checkout__separate"></div>
+
+                <!-- shipping address  -->
+                <div class="shipping-address">
+                  <div class="shipping-address__left">
+                    <div class="shipping-address__title checkout__title">
+                      Shipping address
+                    </div>
+                    <div class="shipping-address__desc">
+                      Where should we deliver your order?
+                    </div>
+                  </div>
+                  <div class="shipping-address__right">
+                    <button
+                      class="shipping-address__btn btn btn-primary btn-round js-toggle"
+                      toggle-target="#add-new-address"
+                    >
+                      <img
+                        src="./assets/icons/checkout/plus.svg"
+                        alt=""
+                        class="shipping-address__btn-img"
+                      />
+                      Add a new address
+                    </button>
+                  </div>
+                </div>
+
+                <div class="user">
+                  <!-- user info 1  -->
+                  <div class="user-info">
+                    <div class="user-info__left">
+                      <label>
+                        <input type="checkbox" class="user-info__checkbox" />
+                      </label>
+
+                      <div class="user-info__content">
+                        <div class="user-info__name">Imran Khan</div>
+                        <div class="user-info__address">
+                          Museum of Rajas, Sylhet Sadar, Sylhet 3100.
+                        </div>
+                        <div class="user-info__method">
+                          <div>Shipping</div>
+                          <div>Delivery from store</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-info__right">
+                      <div class="user-info__ctrl">
+                        <img
+                          src="./assets/icons/checkout/pencil.svg"
+                          alt=""
+                          class="user-info__ctrl-img"
+                        />
+                        <span>Edit</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user info 2  -->
+                  <div class="user-info">
+                    <div class="user-info__left">
+                      <label>
+                        <input type="checkbox" class="user-info__checkbox" />
+                      </label>
+
+                      <div class="user-info__content">
+                        <div class="user-info__name">Imran Khan</div>
+                        <div class="user-info__address">
+                          Al Hamra City (10th Floor), Hazrat Shahjalal Road,
+                          Sylhet, Sylhet, Bangladesh
+                        </div>
+                        <div class="user-info__method">
+                          <div>Shipping</div>
+                          <div>Delivery from store</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-info__right">
+                      <div class="user-info__ctrl">
+                        <img
+                          src="./assets/icons/checkout/pencil.svg"
+                          alt=""
+                          class="user-info__ctrl-img"
+                        />
+                        <span>Edit</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__separate"></div>
+                </div>
+
+                <!-- list  -->
+                <div class="checkout-lists">
+                  <h2 class="checkout-lists__title">Items details</h2>
+                  <!-- checkout item  -->
+                  <div class="checkout-item">
+                    <div class="checkout-item__row">
+                      <a href="#!">
+                        <img
+                          src="./assets/img/product-card/product-card-1.png"
+                          alt=""
+                          class="checkout-item__img"
+                        />
+                      </a>
+                      <div class="checkout-item__content">
+                        <h2 class="checkout-item__heading">
+                          <a href="#!">
+                            Coffee Beans - Espresso Arabica and Robusta Beans
+                          </a>
+                        </h2>
+                        <div class="checkout-item__price">
+                          $47.00 | <span>In Stock</span>
+                        </div>
+                        <div class="checkout-item__select">
+                          <button class="checkout-item__input">
+                            LavAzza
+                            <img
+                              src="./assets/icons/checkout/arrow-down.svg"
+                              alt=""
+                              class="checkout-item__input-icon"
+                            />
+                          </button>
+                          <div class="checkout-item__input">
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/minus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+
+                            1
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/plus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-item__back">
+                      <div class="checkout-item__back-total-price">$47.00</div>
+                      <div class="checkout-item__back-funtion">
+                        <button class="checkout-item__back-funtion-btn">
+                          <img
+                            src="./assets/icons/checkout/heart.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Save
+                        </button>
+                        <button
+                          class="checkout-item__back-funtion-btn js-toggle"
+                          toggle-target="#delete-checkout-item"
+                        >
+                          <img
+                            src="./assets/icons/checkout/trash.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- checkout item  -->
+                  <div class="checkout-item">
+                    <div class="checkout-item__row">
+                      <a href="#!">
+                        <img
+                          src="./assets/img/product-card/product-card-2.png"
+                          alt=""
+                          class="checkout-item__img"
+                        />
+                      </a>
+                      <div class="checkout-item__content">
+                        <h2 class="checkout-item__heading">
+                          <a href="#!">
+                            Lavazza Coffee Blends - Try the Italian Espresso
+                          </a>
+                        </h2>
+                        <div class="checkout-item__price">
+                          $53.00 | <span>In Stock</span>
+                        </div>
+                        <div class="checkout-item__select">
+                          <button class="checkout-item__input">
+                            LavAzza
+                            <img
+                              src="./assets/icons/checkout/arrow-down.svg"
+                              alt=""
+                              class="checkout-item__input-icon"
+                            />
+                          </button>
+                          <div class="checkout-item__input">
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/minus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+                            1
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/plus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-item__back">
+                      <div class="checkout-item__back-total-price">$106.00</div>
+                      <div class="checkout-item__back-funtion">
+                        <button class="checkout-item__back-funtion-btn">
+                          <img
+                            src="./assets/icons/checkout/heart.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Save
+                        </button>
+                        <button
+                          class="checkout-item__back-funtion-btn js-toggle"
+                          toggle-target="#delete-checkout-item"
+                        >
+                          <img
+                            src="./assets/icons/checkout/trash.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- checkout item  -->
+                  <div class="checkout-item">
+                    <div class="checkout-item__row">
+                      <a href="#!">
+                        <img
+                          src="./assets/img/product-card/product-card-3.png"
+                          alt=""
+                          class="checkout-item__img"
+                        />
+                      </a>
+                      <div class="checkout-item__content">
+                        <h2 class="checkout-item__heading">
+                          <a href="#!">
+                            Qualità Oro Mountain Grown - Espresso Coffee Beans
+                          </a>
+                        </h2>
+                        <div class="checkout-item__price">
+                          $38.65 | <span>In Stock</span>
+                        </div>
+                        <div class="checkout-item__select">
+                          <button class="checkout-item__input">
+                            LavAzza
+                            <img
+                              src="./assets/icons/checkout/arrow-down.svg"
+                              alt=""
+                              class="checkout-item__input-icon"
+                            />
+                          </button>
+                          <div class="checkout-item__input">
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/minus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+                            1
+                            <button>
+                              <img
+                                src="./assets/icons/checkout/plus.svg"
+                                alt=""
+                                class="checkout-item__input-icon"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-item__back">
+                      <div class="checkout-item__back-total-price">$38.65</div>
+                      <div class="checkout-item__back-funtion">
+                        <button class="checkout-item__back-funtion-btn">
+                          <img
+                            src="./assets/icons/checkout/heart.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Save
+                        </button>
+                        <button
+                          class="checkout-item__back-funtion-btn js-toggle"
+                          toggle-target="#delete-checkout-item"
+                        >
+                          <img
+                            src="./assets/icons/checkout/trash.svg"
+                            alt=""
+                            class="checkout-item__back-funtion-icon"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- checkout item  -->
+                  <div class="checkout-item d-lg-none">
+                    <a href="#!" class="checkout-item__link">
+                      <img
+                        src="./assets/icons/checkout/arrow-left.svg"
+                        class="checkout-item__link-img"
+                      />
+                      Continue Shopping
+                    </a>
+                    <div class="checkout-item__back">
+                      <div class="checkout-item__back-top">
+                        <div class="checkout-item__back-top-info">
+                          <p class="checkout-item__back-top-info-desc">
+                            Subtotal:
+                          </p>
+                          <p class="checkout-item__back-top-info-desc">
+                            $191.65
+                          </p>
+                        </div>
+                        <div class="checkout-item__back-top-info">
+                          <p class="checkout-item__back-top-info-desc">
+                            Shipping:
+                          </p>
+                          <p class="checkout-item__back-top-info-desc">
+                            $10:00
+                          </p>
+                        </div>
+                      </div>
+                      <div class="checkout-item__back-bottom">
+                        <div class="checkout-item__back-top-info">
+                          <p class="checkout-item__back-total-price">Total:</p>
+                          <p class="checkout-item__back-total-price">$201.65</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-12">
+              <div class="checkout-payment">
+                <!-- top  -->
+                <div class="checkout-payment__top">
+                  <div class="checkout-payment__info">
+                    <p class="checkout-payment__info-title">
+                      Subtotal <span>(items)</span>
+                    </p>
+                    <p class="checkout-payment__info-desc">3</p>
+                  </div>
+                  <div class="checkout-payment__info">
+                    <p class="checkout-payment__info-title">
+                      Price <span>(Total)</span>
+                    </p>
+                    <p class="checkout-payment__info-desc">$191.65</p>
+                  </div>
+                  <div class="checkout-payment__info">
+                    <p class="checkout-payment__info-title">Shipping</p>
+                    <p class="checkout-payment__info-desc">$10.00</p>
+                  </div>
+                </div>
+                <!-- bottom  -->
+                <div class="checkout-payment__bottom">
+                  <div class="checkout-payment__info">
+                    <p class="checkout-payment__info-title">Estimated Total</p>
+                    <p class="checkout-payment__info-desc">$201.65</p>
+                  </div>
+                  <div class="checkout-payment__cta">
+                    <a href="#!" class="btn btn-primary"
+                      >Continue to checkout</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-gift">
+                <div class="checkout-gift__row">
+                  <img
+                    src="./assets/icons/checkout/gift.svg"
+                    alt=""
+                    class="checkout-gift__img"
+                  />
+                  <div class="checkout-gift__info">
+                    <h2 class="checkout-gift__heading">
+                      Send this order as a gift.
+                    </h2>
+                    <p class="checkout-gift__desc">
+                      Available items will be shipped to your gift recipient.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+
+    <!-- model delete  -->
+    <div id="delete-checkout-item" class="model hide">
+      <div class="model__content model__content--small">
+        <div class="model__text">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="model__bottom">
+          <button
+            class="btn btn-text model__btn js-toggle"
+            toggle-target="#delete-checkout-item"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn btn-primary model__btn js-toggle"
+            toggle-target="#delete-checkout-item"
+          >
+            Config
+          </button>
+        </div>
+      </div>
+      <div
+        class="model__overlay js-toggle"
+        toggle-target="#delete-checkout-item"
+      ></div>
+    </div>
+
+    <!-- model add new address  -->
+    <div id="add-new-address" class="model show">
+      <div class="model__content">
+        <h2 class="model__heading">Add new address</h2>
+        <form action="" class="login-form">
+          <!-- input 1  -->
+          <div class="login-form__group">
+            <label for="name" class="login-form__label">Your name</label>
+            <div class="login-form__wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="login-form__input"
+                placeholder="Enter your name"
+                minlength="2"
+                required
+              />
+
+              <img
+                src="./assets/icons/triangle-warning.svg"
+                alt=""
+                class="login-form__icon-error"
+              />
+            </div>
+            <p class="login-form__error">Vui long nhap dung ten</p>
+          </div>
+          <!-- input 2  -->
+          <div class="login-form__group">
+            <label for="phone" class="login-form__label"
+              >Your phone number</label
+            >
+            <div class="login-form__wrap">
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="login-form__input"
+                placeholder="Enter your phone number"
+                minlength="10"
+                required
+              />
+
+              <img
+                src="./assets/icons/triangle-warning.svg"
+                alt=""
+                class="login-form__icon-error"
+              />
+            </div>
+            <p class="login-form__error">Vui long nhap it nhat 10 so</p>
+          </div>
+          <!-- input 2  -->
+          <div class="login-form__group">
+            <label for="address" class="login-form__label">Your address</label>
+            <div class="login-form__wrap">
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="login-form__input"
+                placeholder="Enter your address"
+                required
+              />
+
+              <img
+                src="./assets/icons/triangle-warning.svg"
+                alt=""
+                class="login-form__icon-error"
+              />
+            </div>
+            <p class="login-form__error">Vui long nhap dia chi</p>
+          </div>
+        </form>
+        <div class="model__bottom">
+          <button
+            class="btn btn-text model__btn js-toggle"
+            toggle-target="#add-new-address"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn btn-primary model__btn js-toggle"
+            toggle-target="#add-new-address"
+          >
+            Create
+          </button>
+        </div>
+      </div>
+      <div class="model__overlay"></div>
+    </div>
+  </body>
+</html>

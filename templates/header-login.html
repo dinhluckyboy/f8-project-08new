@@ -4335,14 +4335,115 @@
 
         <div class="separate"></div>
 
-        <button class="top-act__btn">
-          <img
-            src="./assets/icons/shop.svg"
-            alt=""
-            class="icon top-act__icon"
-          />
-          <span class="top-act__title">$65.42</span>
-        </button>
+        <div class="top-act__btn-wrap">
+          <a href="./add-to-cart.html" class="top-act__btn">
+            <img
+              src="./assets/icons/shop.svg"
+              alt=""
+              class="icon top-act__icon"
+            />
+            <span class="top-act__title">$65.42</span>
+          </a>
+          <!-- cart dropdown  -->
+          <div class="cart-dropdown">
+            <div class="cart-dropdown__inner">
+              <img
+                src="../assets/icons/dropdown-arrow.svg"
+                alt=""
+                class="cart-dropdown__arrow-up"
+              />
+              <div class="cart-dropdown__container">
+                <div class="cart-dropdown__row">
+                  <h2 class="cart-dropdown__heading">You have 3 item</h2>
+                  <a href="#!" class="cart-dropdown__link">See All</a>
+                </div>
+              </div>
+              <div class="row row-cols-3">
+                <!-- col 1  -->
+                <div class="col">
+                  <article class="cart-dropdown__item">
+                    <div class="cart-dropdown__img-wrap">
+                      <img
+                        src="./assets/img/product-card/product-card-1.png"
+                        alt=""
+                        class="cart-dropdown__img"
+                      />
+                    </div>
+                    <h3 class="cart-dropdown__item-heading">
+                      Lavazza Coffee Blends
+                    </h3>
+                    <p class="cart-dropdown__item-price">$329.00</p>
+                  </article>
+                </div>
+                <!-- col 2  -->
+                <div class="col">
+                  <article class="cart-dropdown__item">
+                    <div class="cart-dropdown__img-wrap">
+                      <img
+                        src="./assets/img/product-card/product-card-2.png"
+                        alt=""
+                        class="cart-dropdown__img"
+                      />
+                    </div>
+                    <h3 class="cart-dropdown__item-heading">
+                      Coffee Beans Espresso
+                    </h3>
+                    <p class="cart-dropdown__item-price">$39.99</p>
+                  </article>
+                </div>
+                <!-- col 3  -->
+                <div class="col">
+                  <article class="cart-dropdown__item">
+                    <div class="cart-dropdown__img-wrap">
+                      <img
+                        src="./assets/img/product-card/product-card-3.png"
+                        alt=""
+                        class="cart-dropdown__img"
+                      />
+                    </div>
+                    <h3 class="cart-dropdown__item-heading">
+                      Qualità Oro Mountain
+                    </h3>
+                    <p class="cart-dropdown__item-price">$47.00</p>
+                  </article>
+                </div>
+              </div>
+              <div
+                class="cart-dropdown__container cart-dropdown__container--large"
+              >
+                <!-- row 1  -->
+                <div class="cart-dropdown__row">
+                  <p class="cart-dropdown__text">Subtotal:</p>
+                  <p class="cart-dropdown__text">$415.99</p>
+                </div>
+                <!-- row 2  -->
+                <div class="cart-dropdown__row">
+                  <p class="cart-dropdown__text">Texes:</p>
+                  <p class="cart-dropdown__text">Free</p>
+                </div>
+                <!-- row 3  -->
+                <div class="cart-dropdown__row">
+                  <p class="cart-dropdown__text">Shipping</p>
+                  <p class="cart-dropdown__text">$10.00</p>
+                </div>
+                <!-- row 4  -->
+                <div class="cart-dropdown__row">
+                  <p class="cart-dropdown__text cart-dropdown__text--bold">
+                    Total Price
+                  </p>
+                  <p class="cart-dropdown__text cart-dropdown__text--bold">
+                    $425.99
+                  </p>
+                </div>
+              </div>
+              <div class="cart-dropdown__cta">
+                <a href="./add-to-cart.html" class="btn btn-primary"
+                  >Check Out All</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="top-act__user">
