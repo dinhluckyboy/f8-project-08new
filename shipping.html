@@ -127,7 +127,7 @@
                 </a>
               </li>
               <li class="checkout-breadcrumbs__item">
-                <a href="#!" class="checkout-breadcrumbs__link">
+                <a href="./add-to-cart.html" class="checkout-breadcrumbs__link">
                   Checkout
                   <img
                     src="./assets/icons/arrow-right.svg"
@@ -182,7 +182,11 @@
                   <div class="user-info">
                     <div class="user-info__left">
                       <label>
-                        <input type="checkbox" class="user-info__checkbox" />
+                        <input
+                          type="radio"
+                          name="shipping-address"
+                          class="user-info__checkbox"
+                        />
                       </label>
 
                       <div class="user-info__content">
@@ -197,7 +201,10 @@
                       </div>
                     </div>
                     <div class="user-info__right">
-                      <div class="user-info__ctrl">
+                      <div
+                        class="user-info__ctrl js-toggle"
+                        toggle-target="#add-new-address"
+                      >
                         <img
                           src="./assets/icons/checkout/pencil.svg"
                           alt=""
@@ -211,7 +218,11 @@
                   <div class="user-info">
                     <div class="user-info__left">
                       <label>
-                        <input type="checkbox" class="user-info__checkbox" />
+                        <input
+                          type="radio"
+                          name="shipping-address"
+                          class="user-info__checkbox"
+                        />
                       </label>
 
                       <div class="user-info__content">
@@ -227,7 +238,10 @@
                       </div>
                     </div>
                     <div class="user-info__right">
-                      <div class="user-info__ctrl">
+                      <div
+                        class="user-info__ctrl js-toggle"
+                        toggle-target="#add-new-address"
+                      >
                         <img
                           src="./assets/icons/checkout/pencil.svg"
                           alt=""
@@ -530,7 +544,7 @@
                     <p class="checkout-payment__info-desc">$201.65</p>
                   </div>
                   <div class="checkout-payment__cta">
-                    <a href="#!" class="btn btn-primary"
+                    <a href="./payment.html" class="btn btn-primary"
                       >Continue to checkout</a
                     >
                   </div>
@@ -591,7 +605,7 @@
     </div>
 
     <!-- model add new address  -->
-    <div id="add-new-address" class="model show">
+    <div id="add-new-address" class="model hide">
       <div class="model__content">
         <h2 class="model__heading">Add new address</h2>
         <form action="" class="login-form">
@@ -624,7 +638,7 @@
             >
             <div class="login-form__wrap">
               <input
-                type="text"
+                type="tel"
                 name="phone"
                 id="phone"
                 class="login-form__input"

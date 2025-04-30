@@ -43,9 +43,9 @@
     z-index: 1;
 
     padding: 30px;
-    background-color: var(--dialog-content-bg);
+    background-color: var(--model-content-bg);
     border-radius: 20px;
-    box-shadow: 0px 20px 60px 10px var(--dialog-content-shadow);
+    box-shadow: 0px 20px 60px 10px var(--model-content-shadow);
 
     &--small {
       width: min(450px, (100% - 40px));

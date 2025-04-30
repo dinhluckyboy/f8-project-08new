@@ -120,7 +120,9 @@ html.dark {
   --checkout-item-input-icon-color: brightness(0) saturate(100%) invert(78%)
     sepia(0%) saturate(1541%) hue-rotate(64deg) brightness(93%) contrast(102%);
 
+  --checkout-payment-info-bg: #292e39;
+
   // dialog
-  --dialog-content-bg: #171c28;
-  --dialog-content-shadow: rgba(23, 28, 40, 0.2);
+  --model-content-bg: #171c28;
+  --model-content-shadow: rgba(23, 28, 40, 0.2);
 }
