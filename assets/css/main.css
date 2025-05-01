@@ -3921,24 +3921,28 @@ header {
   }
 }
 @media screen and (max-width: 991.98px) {
-  .checkout-item:nth-child(4) {
+  .checkout-item:nth-child(3) {
     border-bottom: none;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .checkout-item {
-    padding: 16px;
   }
 }
 .checkout-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 18px;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 991.98px) {
   .checkout-item:last-child {
-    display: flex;
-    flex-direction: column-reverse;
+    border-top: 1px solid var(--checkout-item-border-color);
   }
+}
+.checkout-item:last-child .checkout-item__back {
+  margin-top: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 .checkout-item__row {
   display: flex;
@@ -4053,7 +4057,7 @@ header {
   .checkout-item__back {
     margin-top: 16px;
     padding-left: 205px;
-    gap: 6px;
+    gap: 16px;
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -4064,7 +4068,6 @@ header {
 @media screen and (max-width: 767.98px) {
   .checkout-item__back {
     padding-left: 76px;
-    gap: 0px;
   }
 }
 .checkout-item__back-total-price {
@@ -4127,6 +4130,15 @@ header {
 }
 .checkout-item__back-bottom {
   padding-top: 30px;
+}
+.checkout-item__back-btn {
+  padding: 18px 40px;
+  font-size: 2.2rem;
+}
+@media screen and (max-width: 767.98px) {
+  .checkout-item__back-btn {
+    font-size: 1.6rem;
+  }
 }
 
 .checkout-payment {
@@ -4208,6 +4220,9 @@ header {
     font-size: 1.4rem;
     line-height: 1.42em;
   }
+}
+.checkout-payment__label {
+  color: var(--checkout-text-color);
 }
 
 .checkout-gift {
@@ -4520,7 +4535,7 @@ header {
   height: 54px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  box-shadow: 0px 20px 60px 10px var(--checkout-shadow);
 }
 @media screen and (max-width: 767.98px) {
   .payment-info__img {
@@ -4550,6 +4565,34 @@ header {
   padding-right: 12px;
   font-size: 1.8rem;
   line-height: 1.44em;
+}
+
+.favorite__input {
+  margin-right: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .favorite__input {
+    margin-right: 14px;
+  }
+}
+.favorite__input--all {
+  margin-top: 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .favorite-item__back {
+    padding-left: 154px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .favorite-item__back {
+    padding-left: 114px;
+  }
+}
+.favorite-item__function {
+  margin-bottom: 0;
+}
+.favorite-item__link {
+  margin-top: 0;
 }
 
 /* dialog scss */

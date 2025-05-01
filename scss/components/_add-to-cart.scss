@@ -198,23 +198,33 @@
     display: block;
   }
 
-  &:nth-child(4) {
+  &:nth-child(3) {
     @include abstracts.screen(lg) {
       border-bottom: none;
     }
   }
 
-  @include abstracts.screen(md) {
-    padding: 16px;
-  }
+  // @include abstracts.screen(md) {
+  //   padding: 16px;
+  // }
 
   &:last-child {
     border-bottom: none;
     padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 18px;
+    flex-wrap: wrap;
 
-    @include abstracts.screen(xl) {
-      display: flex;
-      flex-direction: column-reverse;
+    @include abstracts.screen(lg) {
+      border-top: 1px solid var(--checkout-item-border-color);
+    }
+
+    .checkout-item__back {
+      margin-top: 0;
+      padding-left: 0;
+      margin-left: 0;
     }
   }
 
@@ -337,7 +347,7 @@
     @include abstracts.screen(xl) {
       margin-top: 16px;
       padding-left: 205px;
-      gap: 6px;
+      gap: 16px;
     }
 
     @include abstracts.screen(xl) {
@@ -346,7 +356,6 @@
 
     @include abstracts.screen(md) {
       padding-left: 76px;
-      gap: 0px;
     }
 
     &-total-price {
@@ -414,6 +423,19 @@
 
     &-bottom {
       padding-top: 30px;
+    }
+
+    &-cta {
+      // margin-bottom: 9px;
+    }
+
+    &-btn {
+      padding: 18px 40px;
+      font-size: 2.2rem;
+
+      @include abstracts.screen(md) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -507,6 +529,10 @@
       font-size: 1.4rem;
       line-height: 1.42em;
     }
+  }
+
+  &__label {
+    color: var(--checkout-text-color);
   }
 }
 
@@ -844,7 +870,7 @@
     height: 54px;
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    box-shadow: 0px 20px 60px 10px var(--checkout-shadow);
 
     @include abstracts.screen(md) {
       width: 60px;
@@ -879,5 +905,37 @@
     font-size: 1.8rem;
     line-height: 1.44em;
     // color: var(--login-text-color);
+  }
+}
+
+.favorite {
+  &__input {
+    margin-right: 20px;
+
+    @include abstracts.screen(md) {
+      margin-right: 14px;
+    }
+
+    &--all {
+      margin-top: 30px;
+    }
+  }
+
+  &-item__back {
+    @include abstracts.screen(xl) {
+      padding-left: 154px;
+    }
+
+    @include abstracts.screen(md) {
+      padding-left: 114px;
+    }
+  }
+
+  &-item__function {
+    margin-bottom: 0;
+  }
+
+  &-item__link {
+    margin-top: 0;
   }
 }
