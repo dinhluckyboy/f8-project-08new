@@ -1,0 +1,106 @@
+/* card payment scss */
+
+@use "../abstracts";
+
+.card-payment {
+  min-width: 280px;
+  max-width: 350px;
+  height: 171px;
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  background-color: #1e2e69;
+  border-radius: 10px;
+  user-select: none;
+
+  @include abstracts.screen(xl) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &__top {
+    display: flex;
+    gap: 6px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.42em; /* 142.857% */
+
+    margin-bottom: 37px;
+  }
+
+  &__number {
+    color: #fff;
+    font-family: Gordita;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.44em; /* 144.444% */
+  }
+
+  &__bottom {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__type {
+    margin-left: auto;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Gordita;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75em; /* 175% */
+  }
+
+  &__desc {
+    color: #fff;
+    font-family: Gordita;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em; /* 140% */
+  }
+}
+
+.new-card-payment {
+  min-width: 280px;
+  max-width: 350px;
+  height: 171px;
+  border-radius: 10px;
+  border: 1px dashed var(--profile-border-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  color: var(--profile-color);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.42em; /* 142.857% */
+
+  &__icon {
+    filter: var(--profile-icon-color);
+  }
+
+  @include abstracts.screen(xl) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -125,4 +125,15 @@ html.dark {
   // dialog
   --model-content-bg: #171c28;
   --model-content-shadow: rgba(23, 28, 40, 0.2);
+
+  // profile
+  --profile-dark-color: #292e39;
+  --profile-shadow: rgba(23, 28, 40, 0.2);
+  --profile-bg: #171c28;
+  --profile-color: #b9babe;
+  --profile-icon-color: brightness(0) saturate(100%) invert(82%) sepia(0%)
+    saturate(2055%) hue-rotate(83deg) brightness(93%) contrast(88%);
+  --profile-border-color: #292e39;
+  --profile-icon-color: brightness(0) saturate(100%) invert(76%) sepia(8%)
+    saturate(106%) hue-rotate(191deg) brightness(97%) contrast(91%);
 }
