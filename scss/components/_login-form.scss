@@ -22,6 +22,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.44em; /* 144.444% */
+    cursor: pointer;
+    user-select: none;
 
     @include abstracts.screen(md) {
       margin-bottom: 10px;

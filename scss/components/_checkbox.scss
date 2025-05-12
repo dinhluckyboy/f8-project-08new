@@ -1,0 +1,19 @@
+/* checkbox  scss */
+
+.checkbox {
+  appearance: none;
+
+  &::before {
+    content: url(/assets/icons/checkout/checkbox-nonecheck.svg);
+  }
+
+  &:not(:checked)::before {
+    filter: var(--checkout-item-input-icon-color);
+  }
+
+  &:checked {
+    &::before {
+      content: url(/assets/icons/checkout/checkbox-checked.svg);
+    }
+  }
+}

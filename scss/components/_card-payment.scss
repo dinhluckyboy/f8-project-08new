@@ -82,6 +82,7 @@
   height: 171px;
   border-radius: 10px;
   border: 1px dashed var(--profile-border-color);
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -102,5 +103,74 @@
   @include abstracts.screen(xl) {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.new-card-form {
+  margin-top: 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @include abstracts.screen(sm) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  &__group {
+    margin-top: 0;
+  }
+
+  &__bottom {
+    margin-top: 30px;
+  }
+
+  &__bottom-label {
+    margin-bottom: 0;
+  }
+
+  &__checkbox-wrap {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--profile-color);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.46em; /* 146.667% */
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+      line-height: 1.42em;
+    }
+  }
+
+  &__cta {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+    @include abstracts.screen(sm) {
+      margin-top: 16px;
+    }
+  }
+
+  &__btn {
+    padding: 10px 20px;
+
+    font-size: 1.6rem;
+    line-height: 1.5em;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+      line-height: 1.42em;
+    }
   }
 }

@@ -117,7 +117,7 @@
         <!-- profile container  -->
         <div class="profile-container">
           <div class="row">
-            <div class="col-3 col-xl-5 col-md-12">
+            <div class="col-3 col-xl-5 col-md-12 d-md-none">
               <!-- profile info  -->
               <div class="profile-info">
                 <!-- media  -->
@@ -133,10 +133,7 @@
                 <!-- content  -->
                 <div class="profile-content">
                   <h2 class="profile-content__title">Manage Account</h2>
-                  <a
-                    href="./profile-personal-ingo.html"
-                    class="profile-content__link"
-                  >
+                  <a href="#!" class="profile-content__link">
                     <div class="profile-content__desc">
                       <img
                         src="./assets/icons/profile/user.svg"
@@ -242,216 +239,136 @@
               </div>
             </div>
             <div class="col-9 col-xl-7 col-md-12">
-              <div class="profile-inner">
-                <!-- item 1  -->
-                <div class="profile-item">
-                  <h2 class="profile__title">My Wallet</h2>
-                  <p class="profile__desc">Payment methods</p>
-                  <div class="row g-3 g-sm-0">
-                    <div class="col-4 col-xxl-5 col-xl-12">
-                      <!-- card 1  -->
-                      <article class="card-payment profile-card-fly">
-                        <img
-                          src="./assets/icons/card-payment/fly-large.svg"
-                          alt=""
-                          class="card-payment__decor"
-                        />
-                        <div class="card-payment__top">
-                          <img
-                            src="./assets/icons/card-payment/fly-yellow.svg"
-                            alt=""
-                            class="card-payment__logo"
-                          />
-                          FeatherCard
-                        </div>
-                        <div class="card-payment__number">
-                          1234 4567 8901 2221
-                        </div>
-                        <div class="card-payment__bottom">
-                          <div>
-                            <div class="card-payment__title">Card Holder</div>
-                            <div class="card-payment__desc">Imran Khan</div>
-                          </div>
-                          <div>
-                            <div class="card-payment__title">Expired</div>
-                            <div class="card-payment__desc">10/22</div>
-                          </div>
-                          <img
-                            src="./assets/icons/card-payment/type.svg"
-                            alt=""
-                            class="card-payment__type"
-                          />
-                        </div>
-                      </article>
-                    </div>
-                    <div class="col-4 col-xxl-5 col-xl-12">
-                      <!-- card 2  -->
-                      <article
-                        class="card-payment profile-card-leaf profile-card-payment"
+              <div class="profile-inner profile-inner--mt0">
+                <a href="./profile-wallet.html">
+                  <div class="profile-top">
+                    <img
+                      src="./assets/icons/profile/back.svg"
+                      alt=""
+                      class="profile-top__icon"
+                    />
+                    <h2 class="profile-top__title">Personal info</h2>
+                  </div>
+                </a>
+                <form action="#" class="login-form profile-form">
+                  <!-- grid  -->
+                  <div class="profile-form__grid">
+                    <!-- input 1  -->
+                    <div class="login-form__group profile-form__group">
+                      <label
+                        for="full-name"
+                        class="login-form__label profile-form__label"
+                        >Full Name</label
                       >
-                        <img
-                          src="./assets/icons/card-payment/leaf-large.svg"
-                          alt=""
-                          class="card-payment__decor"
+                      <div class="login-form__wrap">
+                        <input
+                          type="text"
+                          name="full-name"
+                          id="full-name"
+                          class="login-form__input"
+                          placeholder="Truong Dinh"
+                          required
+                          minlength="2"
                         />
-                        <div class="card-payment__top">
-                          <img
-                            src="./assets/icons/card-payment/leaf.svg"
-                            alt=""
-                            class="card-payment__logo"
-                          />
-                          FeatherCard
-                        </div>
-                        <div class="card-payment__number">
-                          5634 4567 8901 5378
-                        </div>
-                        <div class="card-payment__bottom">
-                          <div>
-                            <div class="card-payment__title">Card Holder</div>
-                            <div class="card-payment__desc">Imran Khan</div>
-                          </div>
-                          <div>
-                            <div class="card-payment__title">Expired</div>
-                            <div class="card-payment__desc">11/22</div>
-                          </div>
-                          <img
-                            src="./assets/icons/card-payment/type.svg"
-                            alt=""
-                            class="card-payment__type"
-                          />
-                        </div>
-                      </article>
+                        <img
+                          src="./assets/icons/triangle-warning.svg"
+                          alt=""
+                          class="login-form__icon-error"
+                        />
+                      </div>
+                      <p class="login-form__error">Vui long nhap dung ten</p>
                     </div>
-                    <div class="col-4 col-xxl-5 col-xl-12">
-                      <!-- new card   -->
+                    <!-- input 2  -->
+                    <div class="login-form__group profile-form__group">
+                      <label
+                        for="email"
+                        class="login-form__label profile-form__label"
+                        >Email address</label
+                      >
+                      <div class="login-form__wrap">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="login-form__input"
+                          placeholder="example@gmail.com"
+                          required
+                        />
+                        <img
+                          src="./assets/icons/triangle-warning.svg"
+                          alt=""
+                          class="login-form__icon-error"
+                        />
+                      </div>
+                      <p class="login-form__error">Vui long nhap dung mail</p>
+                    </div>
+                    <!-- input 3  -->
+                    <div class="login-form__group profile-form__group">
+                      <label
+                        for="phone"
+                        class="login-form__label profile-form__label"
+                        >Phone number</label
+                      >
+                      <div class="login-form__wrap">
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          class="login-form__input"
+                          placeholder="0968 575 690"
+                          required
+                          minlength="10"
+                        />
+                        <img
+                          src="./assets/icons/triangle-warning.svg"
+                          alt=""
+                          class="login-form__icon-error"
+                        />
+                      </div>
+                      <p class="login-form__error">Vui long nhap du 10 so</p>
+                    </div>
+                    <!-- input 4  -->
+                    <div class="login-form__group profile-form__group">
+                      <label
+                        for="password"
+                        class="login-form__label profile-form__label"
+                        >Password</label
+                      >
+                      <div class="login-form__wrap">
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="login-form__input"
+                          placeholder="******"
+                          required
+                          minlength="6"
+                        />
+                        <img
+                          src="./assets/icons/triangle-warning.svg"
+                          alt=""
+                          class="login-form__icon-error"
+                        />
+                      </div>
+                      <p class="login-form__error">Vui long nhap du 6 so</p>
+                    </div>
+                  </div>
 
-                      <article
-                        class="new-card-payment profile-card-payment js-toggle"
-                        toggle-target="#add-new-card-payment"
-                      >
-                        <img
-                          src="./assets/icons/plus.svg"
-                          alt=""
-                          class="new-card-payment__icon"
-                        />
-                        Add New Card
-                      </article>
-                    </div>
+                  <!-- cta  -->
+                  <div class="new-card-form__cta">
+                    <a
+                      href="./profile-wallet.html"
+                      class="btn btn-text new-card-form__btn"
+                    >
+                      Cancel
+                    </a>
+                    <button
+                      class="btn btn-primary btn-round new-card-form__btn"
+                    >
+                      Save Edit
+                    </button>
                   </div>
-                </div>
-                <!-- item 2  -->
-                <div class="profile-item">
-                  <h2 class="profile__title">Account info</h2>
-                  <p class="profile__desc">
-                    Addresses, contact information and password
-                  </p>
-                  <div class="row g-3 profile-contact-lists">
-                    <!-- col 1  -->
-                    <div class="col-6 col-xl-12">
-                      <div class="profile-contact">
-                        <div class="profile-contact__media">
-                          <img
-                            src="./assets/icons/profile/mail.svg"
-                            alt=""
-                            class="profile-contact__icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="profile-contact__title">Email Address</p>
-                          <p class="profile-contact__desc">
-                            tarek97.ta@gmail.com
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- col 2  -->
-                    <div class="col-6 col-xl-12">
-                      <div class="profile-contact">
-                        <div class="profile-contact__media">
-                          <img
-                            src="./assets/icons/profile/phone.svg"
-                            alt=""
-                            class="profile-contact__icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="profile-contact__title">Phone number</p>
-                          <p class="profile-contact__desc">
-                            +000 11122 2345 657
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- col 3  -->
-                    <div class="col-6 col-xl-12">
-                      <div class="profile-contact">
-                        <div class="profile-contact__media">
-                          <img
-                            src="./assets/icons/profile/address.svg"
-                            alt=""
-                            class="profile-contact__icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="profile-contact__title">Add an address</p>
-                          <p class="profile-contact__desc">
-                            Bangladesh Embassy, Washington, DC 20008
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- item 3  -->
-                <div class="profile-item">
-                  <h2 class="profile__title">Lists</h2>
-                  <p class="profile__desc">2 items - Primary</p>
-                  <!-- list  -->
-                  <div class="profile-lists">
-                    <!-- item 1  -->
-                    <div class="profile-list__item">
-                      <img
-                        src="./assets/img/product-card/product-card-1.png"
-                        alt=""
-                        class="profile-list__img"
-                      />
-                      <div>
-                        <h3 class="profile-list__title">
-                          Coffee Beans - Espresso Arabica and Robusta Beans
-                        </h3>
-                        <div class="profile-list__content">
-                          <span class="profile-list__price">$47.00</span>
-                          <button
-                            class="btn btn-primary btn-round profile-list__btn"
-                          >
-                            Add to cart
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- item 2  -->
-                    <div class="profile-list__item">
-                      <img
-                        src="./assets/img/product-card/product-card-2.png"
-                        alt=""
-                        class="profile-list__img"
-                      />
-                      <div>
-                        <h3 class="profile-list__title">
-                          Lavazza Coffee Blends - Try the Italian Espresso
-                        </h3>
-                        <div class="profile-list__content">
-                          <span class="profile-list__price">$53.00</span>
-                          <button
-                            class="btn btn-primary btn-round profile-list__btn"
-                          >
-                            Add to cart
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
