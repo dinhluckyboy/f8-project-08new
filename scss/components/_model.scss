@@ -39,7 +39,6 @@
 
   &__content {
     width: min(750px, (100% - 40px));
-    max-height: calc(100vh - 340px);
     overflow-y: auto;
     position: relative;
     z-index: 1;
@@ -51,6 +50,10 @@
 
     &--small {
       width: min(450px, (100% - 40px));
+    }
+
+    @include abstracts.screen(sm) {
+      max-height: calc(100vh - 340px);
     }
   }
 
